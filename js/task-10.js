@@ -1,14 +1,10 @@
 const input = document.querySelector('[type="number"]')
-console.log(input)
 
 const btnCreate = document.querySelector('[data-create]')
-console.log(btnCreate)
 
 const btnDestroy = document.querySelector('[data-destroy]')
-console.log(btnDestroy)
 
 const boxes = document.querySelector('#boxes')
-console.log(boxes)
 
 
 
@@ -35,19 +31,15 @@ function createBoxes(amount) {
         box.style.backgroundColor = getRandomHexColor()
 
         arrDiv.push(box)
-        console.log(i, arrDiv)
     }
 
     boxes.append(...arrDiv)
-    console.log(boxes)
-
 }
  
 
 function destroyBoxes() {
     boxes.innerHTML = ''
     input.value = ''
-    console.log(boxes)
 }
 
 
